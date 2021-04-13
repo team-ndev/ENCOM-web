@@ -8,7 +8,9 @@ function App() {
       <header className="App-header">
       <HomeIMG/>
 
-          ENCOM
+          ENCOM 
+
+          Hello World
       
       </header>
     </div>
