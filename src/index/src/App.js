@@ -10,12 +10,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <Router>
           <Header/>
           <Route exact path="/"><Notification/></Route>
           <Route exact path="/channels"><Channels/></Route>
           <Route exact path="/live"><Live/></Route>
         </Router>
+
+      <HomeIMG/>
+
+
+     
+
+
+      
+
       </header>
     </div>
   );
