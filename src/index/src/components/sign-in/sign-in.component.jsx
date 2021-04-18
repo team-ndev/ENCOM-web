@@ -2,7 +2,7 @@ import React from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import './sign-in.styles.scss';
+import './sign-in.styles.css';
 import { Link } from 'react-router-dom';
 
 class SignIn extends React.Component {

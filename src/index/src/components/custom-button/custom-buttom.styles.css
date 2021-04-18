@@ -13,10 +13,10 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
-
-  &:hover {
+}
+.custom-button:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
   }
-}
+
