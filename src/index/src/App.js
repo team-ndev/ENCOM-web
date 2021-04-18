@@ -1,31 +1,20 @@
 import './App.css';
-import HomeIMG from './components/Home';
-import {Header} from './components/Header/header';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import {Notification} from './components/Notification/notification';
-import {Channels} from './components/Channels/channels';
-import {Live} from './components/Live/live';
-
+import HomeIMG from './pages/Home';
+import Login from './pages/Login/Login'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 function App() {
+  const history = createBrowserHistory();
   return (
     <div className="App">
-      <header className="App-header">
-
-        <Router>
-          <Header/>
-          <Route exact path="/"><Notification/></Route>
-          <Route exact path="/channels"><Channels/></Route>
-          <Route exact path="/live"><Live/></Route>
-        </Router>
-
-      <HomeIMG/>
-
-
-     
-
-      
-
-      </header>
+          <Router history={history}>
+           <Switch>
+           <Route exact path='/' component={Login} />
+          <Route exact path="/Notification">{HomeIMG}</Route>
+          <Route exact path="/live">{HomeIMG}</Route>
+          <Route exact path="/channels">{HomeIMG}</Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
