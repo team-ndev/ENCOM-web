@@ -10,9 +10,9 @@ function App() {
           <Router history={history}>
            <Switch>
            <Route exact path='/' component={Login} />
-          <Route exact path="/Notification">{HomeIMG}</Route>
-          <Route exact path="/live">{HomeIMG}</Route>
-          <Route exact path="/channels">{HomeIMG}</Route>
+           <Route exact path="/Notification">{HomeIMG}</Route>
+           <Route exact path="/live">{HomeIMG}</Route>
+           <Route exact path="/channels">{HomeIMG}</Route>
         </Switch>
       </Router>
     </div>
