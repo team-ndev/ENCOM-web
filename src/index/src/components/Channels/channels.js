@@ -4,6 +4,6 @@ import useStyles from './channelsStyles';
 export const Channels = () => {
     const classes = useStyles();
     return(
-        <div><h1>Channels Router is working!</h1></div>
+        <div><h2>LOGS   @ChannelName1   @ChannelName2</h2></div>
     );
 }
