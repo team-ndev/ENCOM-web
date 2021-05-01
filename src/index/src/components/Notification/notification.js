@@ -4,7 +4,7 @@ import useStyles from './notificationStyles';
 export const Notification = () => {
     const classes = useStyles();
     return(
-        <div><h1>Global notifications here </h1>
+        <div><h1>@Announcements @User</h1>
         </div>
     );
 }
