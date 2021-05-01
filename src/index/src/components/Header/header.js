@@ -3,7 +3,7 @@ import {AppBar, Toolbar, Button, Grid} from '@material-ui/core';
 import useStyles from './headerStyles';
 import {Link} from 'react-router-dom';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
-import LiveTvIcon from '@material-ui/icons/LiveTv';
+import Dvr from '@material-ui/icons/Dvr';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 export const Header = () => {
     const classes = useStyles();
@@ -16,7 +16,7 @@ export const Header = () => {
                     <Grid sm={4} className={classes.gridItem}>
                       <Link to="/Notification">
                         <Button className={classes.button}>
-                        <NotificationsActiveIcon/>Notifications
+                        <NotificationsActiveIcon/> Notifications  
                         </Button>
                       </Link>
                     </Grid>
@@ -24,7 +24,7 @@ export const Header = () => {
                     <Grid sm={4} className={classes.gridItem}>
                     <Link to="/live">
                         <Button className={classes.button}>
-                        <LiveTvIcon/> Live
+                        <Dvr/> Live
                         </Button>
                       </Link>
                     </Grid>
@@ -32,7 +32,7 @@ export const Header = () => {
                       <Grid sm={4} className={classes.gridItem}>
                       <Link to="/channels">
                         <Button className={classes.button}>
-                        <QuestionAnswerIcon/>   Channels
+                        <QuestionAnswerIcon/> Channels
                         </Button>
                       </Link>
                     </Grid>
