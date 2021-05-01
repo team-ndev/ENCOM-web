@@ -51,7 +51,7 @@ class SignIn extends React.Component {
             required
           />
           <Link to='/Notification'>
-          <CustomButton type='submit'> Sign in </CustomButton>
+          <CustomButton type='Submit'> Sign in </CustomButton>
           </Link>
         </form>
       </div>
